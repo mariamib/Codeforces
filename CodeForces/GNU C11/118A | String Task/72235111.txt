@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{char array[101];
+int k;
+gets(array);
+k=strlen(array);
+for (int i=0;i<k;i++){
+    if (array[i]=='A'||array[i]=='U'||array[i]=='E'||array[i]=='I'||array[i]=='O'||array[i]=='a'||array[i]=='u'||array[i]=='e'||array[i]=='i'|| array[i]=='Y'||array[i]=='y'||array[i]=='o'){
+            continue;
+ 
+    }
+    else{
+        printf(".%c", tolower(array[i]));
+    }
+}
+ 
+    return 0;
+}
