@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+ 
+int main()
+{
+double m,n,a,k;
+scanf("%lf %lf %lf",&m,&n,&a);
+k=ceil(m/a)*ceil(n/a);
+printf("%.0f",k);
+    return 0;
+}
