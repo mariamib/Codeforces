@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+ 
+int main()
+{char sum[101];
+char newsum[101]="";
+int count1=0,count2=0,count3=0;
+scanf("%s",&sum);
+for(int i=0;i<strlen(sum);i+=2){
+ 
+    if(sum[i]=='1'){
+        count1+=1;
+ 
+      }
+ 
+            else if(sum[i]=='2'){
+                            count2+=1;
+ 
+                }
+                            else if(sum[i]=='3'){
+                                            count3+=1;
+ 
+                    }
+            }
+    for (int i=0;i<count1;i++){
+ 
+        strcat(newsum,"1");
+            if(strlen(sum)>strlen(newsum)){
+ 
+                        strcat(newsum,"+");
+            }
+ 
+}
+    for (int i=0;i<count2;i++){
+ 
+        strcat(newsum,"2");
+            if(strlen(sum)>strlen(newsum)){
+ 
+                        strcat(newsum,"+");
+            }
+ 
+}
+    for (int i=0;i<count3;i++){
+        strcat(newsum,"3");
+            if(strlen(sum)>strlen(newsum)){
+ 
+                        strcat(newsum,"+");
+            }
+ 
+}
+ 
+printf("%s",newsum);
+return 0;
+ 
+ 
+}
