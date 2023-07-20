@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{ int exit,enter,num;
+int sum=0,y=0;
+scanf("%d",&num);
+for(int i=0;i<num;i++){
+    scanf("%d %d",&exit,&enter);
+    sum+=(enter-exit);
+    if(sum>y){
+        y=sum;}
+}
+printf("%d",y);
+    return 0;
+}
