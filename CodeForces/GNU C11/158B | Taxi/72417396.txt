@@ -1,0 +1,129 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+ 
+int main()
+{int number , x;
+int count1=0,count2=0,count3=0,count4=0,count=0,k=0;
+scanf("%d",&number);
+for (int i =0; i<number;i++){
+    scanf("%d",&x);
+    if (x==1){
+        count1+=1;
+    }
+    if (x==2){
+        count2+=1;
+    }
+    if (x==3){
+        count3+=1;
+    }
+    if (x==4){
+        count4+=1;
+    }}//ok//
+ 
+ 
+    if(count2>1){
+       // printf("1\n");//
+          if(count2%2!=0&&count2!=1){
+                k+=1;
+                count2-=1;
+                count+=count2/2;
+                count2=0;
+               // printf("2\n");//
+                 }//ok//
+ 
+                else if(count2%2==0) {
+ 
+                                    count+=count2/2;
+                                    count2=0;
+                                   // printf("3\n");//
+                        }//if//
+ 
+                }//ok//
+ 
+ 
+ 
+ 
+                                    else if(count2==1){
+                                                    k+=1;
+                                                    count2=0;
+                                                   // printf("4\n");//
+ 
+                                        }//ok//
+    if(count1==count3){
+                    count+=count3;
+                    count1=count3=0;
+ 
+                  // printf("5\n");//
+ 
+                }//ok//
+                else if (count1>count3&&count3!=0){
+                            count+=count3;
+                            count1-=count3;
+                            count3=0;
+ 
+                            //printf("6\n");//
+                }//tmm//
+                            else if(count3>count1){
+                                            count+=(count3-count1)+count1;
+                                            count3=count1=0;
+                                            //printf("7\n");//
+                    }
+    if (k!=0){
+           // printf("8\n");//
+ 
+            if(count1!=0){
+                    //printf("9\n");//
+ 
+                    if(count1==1){
+                            count+=1;
+                            count1=0;
+                            k-=0;
+ 
+                           // printf("10\n");//
+ 
+                    }
+                                    else if(count1%2!=0){
+                                                count1-=1;
+                                                count1-=k*2;
+                                                count+=2;
+                                                count+=ceil(count1/4);
+                                                count1=0;
+                                                k-=0;
+ 
+                                                //printf("11\n");//
+ 
+                                } //for else if//
+                                                        else if (count1%2==0){
+                                                                        count1-=k*2;
+                                                                        k-=1;
+                                                                        count+=1;
+                                                                        count+=ceil(count1/4.0);
+                                                                        count1=0;
+                                                                       // printf("12\n");//
+ 
+                                      }//for else if tani//
+ 
+        }//count1!=0//
+        else{
+            count+=1;
+            //printf("kkk\n");//
+        }
+    }// k!=0//
+    if (count1>0&&count2==0&&count3==0){
+ 
+ 
+        count+=ceil(count1/4.0);
+        count1=0;
+       //printf("13\n");
+    }
+ 
+count+=count4;
+printf("%d",count);
+ 
+ 
+    return 0;
+ 
+}
+ 
+ 
