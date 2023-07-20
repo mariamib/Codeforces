@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+ 
+int main()
+{ int a1,a2,a3,a4,a5;
+int x=0,y=0,k=0;
+for (int i =1;i<6;i++){
+    scanf("%d %d %d %d %d",&a1,&a2,&a3,&a4,&a5);
+ 
+    if (a1==1||a2==1||a3==1||a4==1||a5==1){
+                        if(a1==1||a5==1){
+                                    x=2;
+                                 if (i<3){
+ 
+                                    y=3-i;
+                            }
+ 
+                                            else if(i>3){
+                                                 y=i-3;
+ 
+ 
+                                        }
+ 
+ 
+}//if//
+ 
+ 
+                            else if (a2==1||a4==1){
+                                            x=1;
+                                             if (i<3){
+                                                    y=3-i;
+ 
+ 
+                                        }
+                                                        else if(i>3){
+                                                                y=i-3;
+ 
+ 
+                                        }
+ 
+ 
+                               }
+                                                        else if(a3==1){
+                                                                    x=0;
+                                                                    if (i<3){
+ 
+                                                                            y=3-i;
+ 
+                }
+                                                                                    else if(i>3){
+                                                                                            y=i-3;
+                                                                                            }
+ 
+                            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+}//for loop//
+ 
+printf("%d",y+x);
+    return 0;
+ 
+ 
+}
